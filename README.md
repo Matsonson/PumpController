@@ -58,5 +58,5 @@ Creates a breathing effect for the power LED to indicate the system is running.
 
 ## Library Files
 
-- `UltrasonicSensor.h` and `UltrasonicSensor.cpp`: Handles ultrasonic sensor readings.
+- `UltrasonicSensor.h` and `UltrasonicSensor.cpp`: Handles ultrasonic sensor readings. The library is based on this one by [ritesht](https://github.com/riteshRcH/waterproof_small_blind_ultrasonic_sensor_DYP-A02YYxx_v1.0/blob/master/code/arduino/DYPA02YYUM_v1_arduino_uno_code/DYPA02YYUM_v1_arduino_uno_code.ino)
 - `KnobManager.h` and `KnobManager.cpp`: Manages the encoder and button input.
