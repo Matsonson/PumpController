@@ -5,7 +5,6 @@
 #include <EEPROM.h>
 
 
-
 // Delay definitions
 #define BREATH_INTERVAL 8  // Interval in milliseconds between updates
 #define MAX_BRIGHTNESS 200  // Maximum brightnesensorSerial value for analogWrite
@@ -34,6 +33,8 @@
 unsigned long previoussensormillis = 0;
 unsigned long previousbreathmillis = 0;
 unsigned long previousrelaymillis = 0;
+
+bool debug = false;
 unsigned long previousdebugmillis = 0;
 
 
@@ -171,7 +172,7 @@ void loop()
   }
 
 
-  if (millis() - 1000 > previousdebugmillis){
+  if (millis() - 1000 > previousdebugmillis && debug){
     int myint2;
     EEPROM.get(LOWER_LIMIT_ADDRESS, myint2);
     int myint3;
